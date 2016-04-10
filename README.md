@@ -1,8 +1,8 @@
-# image-loader
-[![Build Status](https://travis-ci.org/JFusco/image-loader.svg?branch=master)](https://travis-ci.org/JFusco/image-loader)
-[![devDependency Status](https://david-dm.org/JFusco/image-loader/dev-status.svg)](https://david-dm.org/JFusco/image-loader#info=devDependencies)
+# i-loader
+[![Build Status](https://travis-ci.org/JFusco/i-loader.svg?branch=master)](https://travis-ci.org/JFusco/i-loader)
+[![devDependency Status](https://david-dm.org/JFusco/i-loader/dev-status.svg)](https://david-dm.org/JFusco/i-loader#info=devDependencies)
 
-> Simple, lightweight, DOM manipulation object using plain ES6 syntax.
+> Async or parallel, single image or multi image loader with progress using native Promises.
 
 ## Getting Started ##
 
