@@ -35,16 +35,16 @@ export default class ILoader {
 				});
 
 				return Promise.all(imagePromise);
-			}else{
-				return this.imageQueue.reduce((promise, item) => {
-					return promise.then(() => {
-						return this.loadImage(item);
-					});
-				}, Promise.resolve());
 			}
-		}else{
-			return this.loadImage(imageUrl);
+
+			return this.imageQueue.reduce((promise, item) => {
+				return promise.then(() => {
+					return this.loadImage(item);
+				});
+			}, Promise.resolve());
 		}
+
+		return this.loadImage(imageUrl);
 	}
 
 	loadImage(img) {
@@ -78,7 +78,7 @@ export default class ILoader {
 	}
 
 	checkProgress(progress) {
-		return new Promise((resolve) => {
+		return new Promise(resolve => {
 			const percentInterval = setInterval(() => {
 				this.counter++;
 

@@ -60,6 +60,8 @@
 		"webpack": "^1.10.5"
 	},
 	"scripts": {
-		"test": "karma start --single-run --no-auto-watch"
+		"test": "karma start --single-run --no-auto-watch",
+		"compile": "babel --presets es2015 -d dist/ src/",
+		"prepublish": "npm run compile"
 	}
 }
