@@ -1,0 +1,65 @@
+{
+	"name": "i-loader",
+	"version": "0.0.1",
+	"description": "Async or parallel, single image or multi image loader with progress using native Promises",
+	"main": "dist/i-loader.js",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JFusco/i-loader"
+	},
+	"author": {
+		"name": "Joe Fusco",
+		"email": "jfusco311@gmail.com"
+	},
+	"keywords": [
+		"image",
+		"images",
+		"loader",
+		"Promises",
+		"queue",
+		"async",
+		"sequence",
+		"waterfall",
+		"pool",
+		"batch",
+		"progress",
+		"preloader",
+		"image loader",
+		"es6",
+		"es2015"
+	],
+	"devDependencies": {
+		"babel-core": "~6.7.4",
+		"babel-eslint": "~6.0.2",
+		"babel-loader": "~6.2.4",
+		"babel-plugin-transform-runtime": "^6.4.3",
+		"babel-preset-es2015": "^6.3.13",
+		"babel-preset-stage-0": "^6.3.13",
+		"babel-runtime": "^6.6.0",
+		"gulp": "~3.9.0",
+		"gulp-esdoc": "~0.2.0",
+		"gulp-eslint": "~2.0.0",
+		"gulp-filelog": "~0.4.1",
+		"gulp-load-plugins": "~1.2.0",
+		"gulp-util": "~3.0.7",
+		"gulp-watch": "~4.3.5 ",
+		"jasmine-core": "^2.3.4",
+		"jasmine-jquery": "^2.1.1",
+		"jquery": "^2.2.2",
+		"karma": "^0.13.3",
+		"karma-jasmine": "^0.3.6",
+		"karma-phantomjs-launcher": "^1.0.0",
+		"karma-spec-reporter": "~0.0.24",
+		"karma-webpack": "^1.7.0",
+		"minimist": "~1.2.0",
+		"phantomjs": "^2.1.3",
+		"phantomjs-polyfill": "~0.0.2",
+		"phantomjs-prebuilt": ">=1.9",
+		"run-sequence": "^1.1.1",
+		"webpack": "^1.10.5"
+	},
+	"scripts": {
+		"test": "karma start --single-run --no-auto-watch"
+	}
+}
