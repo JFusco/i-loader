@@ -70,16 +70,16 @@ var ILoader = function () {
 					}();
 
 					if ((typeof _ret === 'undefined' ? 'undefined' : (0, _typeof3.default)(_ret)) === "object") return _ret.v;
-				} else {
-					return this.imageQueue.reduce(function (promise, item) {
-						return promise.then(function () {
-							return _this.loadImage(item);
-						});
-					}, _promise2.default.resolve());
 				}
-			} else {
-				return this.loadImage(imageUrl);
+
+				return this.imageQueue.reduce(function (promise, item) {
+					return promise.then(function () {
+						return _this.loadImage(item);
+					});
+				}, _promise2.default.resolve());
 			}
+
+			return this.loadImage(imageUrl);
 		}
 	}, {
 		key: 'loadImage',
