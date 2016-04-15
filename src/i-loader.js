@@ -30,7 +30,7 @@ export default class ILoader {
 
 				this.imageQueue.map(value => {
 					imagePromise.push(
-							this.loadImage(value)
+						this.loadImage(value)
 					);
 				});
 

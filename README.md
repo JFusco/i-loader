@@ -6,7 +6,7 @@
 > Async or parallel, single image or multi image loader with progress using native Promises.
 
 ILoader is a very lightweight object to help with parallel and sequential image loading in an application. **ILoader has 
-no UI** - it simply returns the consumer a progress/complete via callback/Promise based on the image queue that is passed.
+no UI** - it simply returns the consumer a progress/complete via callback/Promise based on the image queue that is passed in.
 
 ## Getting Started ##
 #### Install
@@ -61,8 +61,8 @@ imageLoader.load(
 ## Options
 There are a couple of options you can pass in to the constructor
 
-* **`async`**
-* **`onProgress`**
+* **`async`** - Default is `false` - Pass `true` to have images load in sequential order
+* **`onProgress`** - Default is `null` - Function that returns progress, from 0-100
 
 ## Tests
 ```sh
